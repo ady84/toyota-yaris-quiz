@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYOTA YARIS QUIZ!!!</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="begin-container">
+        <h1>TOYOTA YARIS QUIZ!!!</h1>
+        <p>This quiz will pick the car that is suited for you.</p>
+        <p>After you answer the questions, the best match will be picked for you.</p>
+        <button id="start-btn">Start</button>
+    </div>
+    <div id="questions">
+        <div class="question" style="display: none;">
+            <h2>Question 1</h2>
+            <p>What car body type do you prefer?</p>
+            <button data-score="1" class="answer">Sedan</button>
+            <button data-score="2" class="answer">Coupe</button>
+            <button data-score="3" class="answer">Hatchback</button>
+            <button data-score="4" class="answer">Compact</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 2</h2>
+            <p>What transmission should the car have?</p>
+            <button data-score="2" class="answer">Manual</button>
+            <button data-score="4" class="answer">Automatic</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 3</h2>
+            <p>For what will you use the car?</p>
+            <button data-score="1" class="answer">Frequent city trips</button>
+            <button data-score="2" class="answer">Frequent out of city trips</button>
+            <button data-score="3" class="answer">Both</button>
+            <button data-score="4" class="answer">Toyota Yaris</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 4</h2>
+            <p>What car size do you prefer?</p>
+            <button data-score="1" class="answer">Small, I want to squeeze past Indian Uber drivers on scooters</button>
+            <button data-score="2" class="answer">Medium, because I am a very boring person</button>
+            <button data-score="3" class="answer">Big, because I have a small dick to compensate for</button>
+            <button data-score="4" class="answer">I pick... Toyota Yaris</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 5</h2>
+            <p>What features would you need your car to have?</p>
+            <button data-score="1" class="answer">Spacious interior and trunk, perfect for family trips</button>
+            <button data-score="2" class="answer">All the newest features, heated chairs, Tesla sentry mode etc.</button>
+            <button data-score="3" class="answer">I want it cheală</button>
+            <button data-score="4" class="answer">I want Toyota Yaris</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 6</h2>
+            <p>What is your budget?</p>
+            <button data-score="1" class="answer">Under 15000 euro</button>
+            <button data-score="2" class="answer">15000 to 40000 euro</button>
+            <button data-score="3" class="answer">No number</button>
+            <button data-score="4" class="answer">Toyota Yaris budget</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 7</h2>
+            <p>Do you want other road users to stare at your car (like a BMW with no dust particle filter)?</p>
+            <button data-score="1" class="answer">Please no, I am shy</button>
+            <button data-score="2" class="answer">I don't care</button>
+            <button data-score="3" class="answer">YES YES YES YES YES I WANT TO REMOVE MY DUST PARTICLE FILTER!</button>
+            <button data-score="4" class="answer">I want them to look at Toyota Yaris</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 8</h2>
+            <p>Do you need you car to pull to drive on E85?</p>
+            <button data-score="1" class="answer">Yes, I don't want to die</button>
+            <button data-score="2" class="answer">I don't live in Romania</button>
+            <button data-score="3" class="answer">No, other road users will avoid me for sure</button>
+            <button data-score="4" class="answer">Toyota Yaris forever</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 9</h2>
+            <p>Fuel type?</p>
+            <button data-score="1" class="answer">Diesel</button>
+            <button data-score="2" class="answer">Electric</button>
+            <button data-score="3" class="answer">Gasoline</button>
+            <button data-score="4" class="answer">Toyota Yaris fuel</button>
+        </div>
+        <div class="question" style="display: none;">
+            <h2>Question 10</h2>
+            <p>Rate this quiz out of 5?</p>
+            <button data-score="1" class="answer">1-2</button>
+            <button data-score="2" class="answer">3-4</button>
+            <button data-score="3" class="answer">5</button>
+            <button data-score="4" class="answer">Toyota Yaris rating</button>
+        </div>
+    </div>
+    <div id="result-container" style="display: none;">
+        <h1>We think this car is a good fit for you:</h1>
+        <div class="result" style="display: none;">
+            <img height="480" width="640" src="images/yaris.jpg">
+            <h1>Toyota Yaris</h1>
+            <audio loop>
+                <source src="audio/yaris.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="result" style="display: none;">
+            <img height="480" width="640" src="images/astra.jpg">
+            <h1>Opel Astra</h1>
+            <audio loop>
+                <source src="audio/astra.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="result" style="display: none;">
+            <img height="480" width="640" src="images/qashqai.jpg">
+            <h1>Nissan Qashqai</h1>
+            <audio loop>
+                <source src="audio/qashqai.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="result" style="display: none;">
+            <img height="480" width="640" src="images/miata.jpg">
+            <h1>Mazda Miata</h1>
+            <audio loop>
+                <source src="audio/miata.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="result" style="display: none;">
+            <img height="480" width="640" src="images/zafira.jpg">
+            <h1>Opel Zafira</h1>
+            <audio loop>
+                <source src="audio/zafira.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="result" style="display: none;">
+            <img height="480" width="640" src="images/golf.jpg">
+            <h1>Volkswagen Golf</h1>
+            <audio loop>
+                <source src="audio/golf.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
