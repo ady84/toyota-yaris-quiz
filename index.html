@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOYOTA YARIS QUIZ!!!</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="begin-container">
@@ -17,81 +18,101 @@
     <div id="questions">
         <div class="question" style="display: none;">
             <h2>Question 1</h2>
-            <p>What car body type do you prefer?</p>
-            <button data-score="1" class="answer">Sedan</button>
-            <button data-score="2" class="answer">Coupe</button>
-            <button data-score="3" class="answer">Hatchback</button>
-            <button data-score="4" class="answer">Compact</button>
+            <p class="question-box">What car body type do you prefer?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Sedan</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>Coupe</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>Hatchback</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>Compact</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 2</h2>
-            <p>What transmission should the car have?</p>
-            <button data-score="2" class="answer">Manual</button>
-            <button data-score="4" class="answer">Automatic</button>
+            <p class="question-box">What transmission should the car have?</p>
+            <div class="answers">
+                <button data-score="2" class="answer"><span class="yellow">A: </span>Manual</button>
+                <button data-score="4" class="answer"><span class="yellow">B: </span>Automatic</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 3</h2>
-            <p>For what will you use the car?</p>
-            <button data-score="1" class="answer">Frequent city trips</button>
-            <button data-score="2" class="answer">Frequent out of city trips</button>
-            <button data-score="3" class="answer">Both</button>
-            <button data-score="4" class="answer">Toyota Yaris</button>
+            <p class="question-box">For what will you use the car?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Frequent city trips</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>Frequent out of city trips</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>Both</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>Toyota Yaris</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 4</h2>
-            <p>What car size do you prefer?</p>
-            <button data-score="1" class="answer">Small, I want to squeeze past Indian Uber drivers on scooters</button>
-            <button data-score="2" class="answer">Medium, because I am a very boring person</button>
-            <button data-score="3" class="answer">Big, because I have a small dick to compensate for</button>
-            <button data-score="4" class="answer">I pick... Toyota Yaris</button>
+            <p class="question-box">What car size do you prefer?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Small, I want to squeeze past Indian Uber drivers on scooters</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>Medium, because I am a very boring person</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>Big, because I have a small dick to compensate for</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>I pick... Toyota Yaris</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 5</h2>
-            <p>What features would you need your car to have?</p>
-            <button data-score="1" class="answer">Spacious interior and trunk, perfect for family trips</button>
-            <button data-score="2" class="answer">All the newest features, heated chairs, Tesla sentry mode etc.</button>
-            <button data-score="3" class="answer">I want it cheală</button>
-            <button data-score="4" class="answer">I want Toyota Yaris</button>
+            <p class="question-box">What features would you need your car to have?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Spacious interior and trunk, perfect for family trips</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>All the newest features, heated chairs, Tesla sentry mode etc.</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>I want it cheală</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>I want Toyota Yaris</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 6</h2>
-            <p>What is your budget?</p>
-            <button data-score="1" class="answer">Under 15000 euro</button>
-            <button data-score="2" class="answer">15000 to 40000 euro</button>
-            <button data-score="3" class="answer">No number</button>
-            <button data-score="4" class="answer">Toyota Yaris budget</button>
+            <p class="question-box">What is your budget?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Under 15000 euro</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>15000 to 40000 euro</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>No number</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>Toyota Yaris budget</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 7</h2>
-            <p>Do you want other road users to stare at your car (like a BMW with no dust particle filter)?</p>
-            <button data-score="1" class="answer">Please no, I am shy</button>
-            <button data-score="2" class="answer">I don't care</button>
-            <button data-score="3" class="answer">YES YES YES YES YES I WANT TO REMOVE MY DUST PARTICLE FILTER!</button>
-            <button data-score="4" class="answer">I want them to look at Toyota Yaris</button>
+            <p class="question-box">Do you want other road users to stare at your car (like a BMW with no dust particle filter)?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Please no, I am shy</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>I don't care</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>YES YES YES YES YES I WANT TO REMOVE MY DUST PARTICLE FILTER!</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>I want them to look at Toyota Yaris</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 8</h2>
-            <p>Do you need you car to pull to drive on E85?</p>
-            <button data-score="1" class="answer">Yes, I don't want to die</button>
-            <button data-score="2" class="answer">I don't live in Romania</button>
-            <button data-score="3" class="answer">No, other road users will avoid me for sure</button>
-            <button data-score="4" class="answer">Toyota Yaris forever</button>
+            <p class="question-box">Do you need you car to pull to drive on E85?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Yes, I don't want to die</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>I don't live in Romania</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>No, other road users will avoid me for sure</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>Toyota Yaris forever</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 9</h2>
-            <p>Fuel type?</p>
-            <button data-score="1" class="answer">Diesel</button>
-            <button data-score="2" class="answer">Electric</button>
-            <button data-score="3" class="answer">Gasoline</button>
-            <button data-score="4" class="answer">Toyota Yaris fuel</button>
+            <p class="question-box">Fuel type?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>Diesel</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>Electric</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>Gasoline</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>Toyota Yaris fuel</button>
+            </div>
         </div>
         <div class="question" style="display: none;">
             <h2>Question 10</h2>
-            <p>Rate this quiz out of 5?</p>
-            <button data-score="1" class="answer">1-2</button>
-            <button data-score="2" class="answer">3-4</button>
-            <button data-score="3" class="answer">5</button>
-            <button data-score="4" class="answer">Toyota Yaris rating</button>
+            <p class="question-box">Rate this quiz out of 5?</p>
+            <div class="answers">
+                <button data-score="1" class="answer"><span class="yellow">A: </span>1-2</button>
+                <button data-score="2" class="answer"><span class="yellow">B: </span>3-4</button>
+                <button data-score="3" class="answer"><span class="yellow">C: </span>5</button>
+                <button data-score="4" class="answer"><span class="yellow">D: </span>Toyota Yaris rating</button>
+            </div>
         </div>
     </div>
     <div id="result-container" style="display: none;">

@@ -3,6 +3,7 @@ const startBtn = document.querySelector("#start-btn");
 startBtn.addEventListener("click", () => {
     const beginText = document.querySelector("#begin-container");
     beginText.style.cssText = "display: none;";
+    document.body.style.cssText = "background: url('images/iantu.jpg') no-repeat; background-size: cover; background-attachment: fixed;";
     displayQuestions();
 });
 
